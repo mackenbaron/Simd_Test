@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAllocator.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdCompare.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdConfig.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdConst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdConversion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdDefs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdEnable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdExtract.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdHelp.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdInit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLib.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLoad.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLog.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdMath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdMemory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdPixel.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdPoint.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdRectangle.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse41.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse42.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdStore.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVersion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdView.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx1SquaredDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AbsDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AbsGradientSaturatedSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AddFeatureDifference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AlphaBlending.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgraToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgraToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgrToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgrToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgrToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Binarization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Conditional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2DeinterleaveUv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2EdgeBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Fill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2GaussianBlur3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2GrayToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2GrayToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Histogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Hog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Interference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Lbp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2MedianFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Operation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray4x4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray5x5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Reorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ResizeBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Segmentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ShiftBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Sobel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2SquaredDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Statistic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2StretchGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2YuvToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2YuvToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2YuvToHue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAbsDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAbsGradientSaturatedSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAddFeatureDifference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAlphaBlending.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBayerToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBayerToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToBayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToBayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToHsl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToHsv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBinarization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseConditional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseCopy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseCrc32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseDeinterleaveUv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseEdgeBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseFill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseGaussianBlur3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseGrayToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseGrayToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseHog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseIntegral.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseInterference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseLbp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseMedianFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray4x4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray5x5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseResizeBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseSegmentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseShiftBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseSobel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseSquaredDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseStatistic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseStretchGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToHsl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToHsv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToHue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse1SquaredDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AbsDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AbsGradientSaturatedSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AddFeatureDifference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AlphaBlending.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Background.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgraToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgraToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgrToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgrToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Binarization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Conditional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2DeinterleaveUv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2EdgeBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Fill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2GaussianBlur3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2GrayToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Histogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Hog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Interference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Lbp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2MedianFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Operation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray4x4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray5x5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Reorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ResizeBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Segmentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ShiftBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Sobel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2SquaredDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Statistic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2StretchGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Texture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2YuvToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2YuvToHue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse41Segmentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse42Crc32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3AlphaBlending.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgraToBayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgraToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgraToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToBayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3GrayToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3ReduceGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3Reorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3Sobel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3YuvToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAbsDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAbsGradientSaturatedSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAddFeatureDifference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAlphaBlending.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToBayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToBayer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToGray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToYuv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBinarization.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxConditional.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxDeinterleaveUv.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxEdgeBackground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxFill.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxGaussianBlur3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxGrayToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxGrayToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxHistogram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxHog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxInterference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxLbp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxMedianFilter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxOperation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray3x3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray4x4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray5x5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReorder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxResizeBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxSegmentation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxShiftBilinear.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxSobel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxSquaredDifferenceSum.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxStatistic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxStretchGray2x2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxTexture.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxYuvToBgr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxYuvToBgra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxYuvToHue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F52130C8-DFA6-4BD6-899D-37712190FFBF}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>libSimd</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\../../../obj/dbg/x86_vc10/libSimd\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>.\../../../obj/dbg/x86_vc12/libSimd\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>.\../../../obj/dbg/x86_vc10/libSimd\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>.\../../../obj/dbg/x86_vc12/libSimd\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\../../../obj/rel/x86_vc10/libSimd\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>.\../../../obj/rel/x86_vc12/libSimd\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>.\../../../obj/rel/x86_vc10/libSimd\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>.\../../../obj/rel/x86_vc12/libSimd\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>.\../../../obj/dbg/x86_vc10/libSimd\libSimd.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../../obj/dbg/x86_vc10/libSimd\</AssemblerListingLocation>
+      <ObjectFileName>.\../../../obj/dbg/x86_vc10/libSimd\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../../obj/dbg/x86_vc10/libSimd\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>../../../src/simd.2.2.27.443/simd/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/dbg/x86_vc10/libSimd[dbg_x86_vc10].lib</OutputFile>
+    </Lib>
+    <Bscmake>
+      <OutputFile>.\../../../obj/dbg/x86_vc10/libSimd\libSimd.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderOutputFile>.\../../../obj/dbg/x86_vc12/libSimd\libSimd.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../../obj/dbg/x86_vc12/libSimd\</AssemblerListingLocation>
+      <ObjectFileName>.\../../../obj/dbg/x86_vc12/libSimd\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../../obj/dbg/x86_vc12/libSimd\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>../../../src/simd.2.2.27.443/simd/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/dbg/x86_vc12/libSimd[dbg_x86_vc12].lib</OutputFile>
+    </Lib>
+    <Bscmake>
+      <OutputFile>.\../../../obj/dbg/x86_vc12/libSimd\libSimd.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\../../../obj/rel/x86_vc10/libSimd\libSimd.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../../obj/rel/x86_vc10/libSimd\</AssemblerListingLocation>
+      <ObjectFileName>.\../../../obj/rel/x86_vc10/libSimd\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../../obj/rel/x86_vc10/libSimd\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>../../../src/simd.2.2.27.443/simd/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/rel/x86_vc10/libSimd[rel_x86_vc10].lib</OutputFile>
+    </Lib>
+    <Bscmake>
+      <OutputFile>.\../../../obj/rel/x86_vc10/libSimd\libSimd.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeaderOutputFile>.\../../../obj/rel/x86_vc12/libSimd\libSimd.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\../../../obj/rel/x86_vc12/libSimd\</AssemblerListingLocation>
+      <ObjectFileName>.\../../../obj/rel/x86_vc12/libSimd\</ObjectFileName>
+      <ProgramDataBaseFileName>.\../../../obj/rel/x86_vc12/libSimd\</ProgramDataBaseFileName>
+      <AdditionalIncludeDirectories>../../../src/simd.2.2.27.443/simd/src/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>../../../lib/rel/x86_vc12/libSimd[rel_x86_vc12].lib</OutputFile>
+    </Lib>
+    <Bscmake>
+      <OutputFile>.\../../../obj/rel/x86_vc12/libSimd\libSimd.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAllocator.hpp" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx1.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBase.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdCompare.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdConfig.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdConst.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdConversion.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdDefs.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdEnable.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdExtract.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdHelp.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdInit.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLib.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLib.hpp" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLoad.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLog.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdMath.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdMemory.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdPixel.hpp" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdPoint.hpp" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdRectangle.hpp" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSet.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse1.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse41.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse42.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdStore.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVersion.h" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdView.hpp" />
+    <ClInclude Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx1SquaredDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AbsDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AbsGradientSaturatedSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AddFeatureDifference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2AlphaBlending.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Background.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgraToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgraToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgrToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgrToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2BgrToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Binarization.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Conditional.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2DeinterleaveUv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2EdgeBackground.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Fill.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2GaussianBlur3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2GrayToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2GrayToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Histogram.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Hog.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Interference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Lbp.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2MedianFilter.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Operation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray4x4.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ReduceGray5x5.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Reorder.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ResizeBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Segmentation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2ShiftBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Sobel.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2SquaredDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Statistic.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2StretchGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2Texture.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2YuvToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2YuvToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdAvx2YuvToHue.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAbsDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAbsGradientSaturatedSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAddFeatureDifference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseAlphaBlending.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBackground.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBayerToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBayerToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToBayer.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgraToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToBayer.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToHsl.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToHsv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBgrToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseBinarization.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseConditional.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseCopy.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseCrc32.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseDeinterleaveUv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseEdgeBackground.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseFill.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseGaussianBlur3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseGrayToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseGrayToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseHistogram.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseHog.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseIntegral.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseInterference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseLbp.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseMedianFilter.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseOperation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray4x4.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReduceGray5x5.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseReorder.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseResizeBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseSegmentation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseShiftBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseSobel.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseSquaredDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseStatistic.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseStretchGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseTexture.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToHsl.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToHsv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdBaseYuvToHue.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdLib.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse1SquaredDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AbsDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AbsGradientSaturatedSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AddFeatureDifference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2AlphaBlending.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Background.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgraToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgraToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgrToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2BgrToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Binarization.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Conditional.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2DeinterleaveUv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2EdgeBackground.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Fill.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2GaussianBlur3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2GrayToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Histogram.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Hog.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Interference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Lbp.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2MedianFilter.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Operation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray4x4.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ReduceGray5x5.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Reorder.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ResizeBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Segmentation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2ShiftBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Sobel.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2SquaredDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Statistic.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2StretchGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2Texture.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2YuvToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse2YuvToHue.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse41Segmentation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSse42Crc32.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3AlphaBlending.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgraToBayer.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgraToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgraToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToBayer.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3BgrToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3GrayToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3ReduceGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3Reorder.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3Sobel.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdSsse3YuvToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAbsDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAbsGradientSaturatedSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAddFeatureDifference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxAlphaBlending.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBackground.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToBayer.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgraToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToBayer.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToGray.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBgrToYuv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxBinarization.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxConditional.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxDeinterleaveUv.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxEdgeBackground.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxFill.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxGaussianBlur3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxGrayToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxGrayToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxHistogram.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxHog.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxInterference.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxLbp.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxMedianFilter.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxOperation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray3x3.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray4x4.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReduceGray5x5.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxReorder.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxResizeBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxSegmentation.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxShiftBilinear.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxSobel.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxSquaredDifferenceSum.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxStatistic.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxStretchGray2x2.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxTexture.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxYuvToBgr.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxYuvToBgra.cpp" />
+    <ClCompile Include="..\..\..\src\simd.2.2.27.443\simd\src\Simd\SimdVsxYuvToHue.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
